@@ -10,6 +10,7 @@ WORKDIR /app
 
 USER node
 
+ARG CACHEBUST=1
 COPY ./node_modules /app/node_modules
 
 ENTRYPOINT ["node"]
